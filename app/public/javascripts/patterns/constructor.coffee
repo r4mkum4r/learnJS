@@ -11,8 +11,7 @@ class ConstructorPattern
 
   constructor : (type) ->
 
-  	console.log type
-  	console.log '*******************************************'
+  	print.pattern type, '*'
 
   	fn = arguments.callee
 

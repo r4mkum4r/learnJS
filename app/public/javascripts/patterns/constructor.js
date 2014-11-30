@@ -13,8 +13,7 @@ var ConstructorPattern;
 ConstructorPattern = (function() {
   function ConstructorPattern(type) {
     var fn;
-    console.log(type);
-    console.log('*******************************************');
+    print.pattern(type, '*');
     fn = arguments.callee;
     if (!(this instanceof fn)) {
       return new fn();
