@@ -52,6 +52,9 @@ utils =
 			console.log newPattern
 
 
+
+## Transform all local methods to be used globally
+
 for util of utils
 
 	## Use `hasOwnProperty` to make sure we are extracting the object only property and not its inhertied properties
