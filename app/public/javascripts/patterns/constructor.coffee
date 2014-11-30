@@ -1,0 +1,21 @@
+###
+	
+	* Omitting new when creating an instance
+	* arguments.callee returns the function invoked
+	* check this to make sure its an instance and not window
+
+	* use-case : simulating classes and creating new instances
+
+###
+class ConstructorPattern
+
+  constructor : (type) ->
+
+  	console.log type
+  	console.log '*******************************************'
+
+  	fn = arguments.callee
+
+  	if not ( @ instanceof fn )
+  	then return new fn()
+
